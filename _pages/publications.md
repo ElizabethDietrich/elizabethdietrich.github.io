@@ -12,7 +12,7 @@ nav_order: 2
 <p><a href='https://scholar.google.com/citations?user=tnOczoAAAAAJ&hl=en'>Here</a> is the link to my Google Scholar.</p>
 <br />
 
-{% bibliography -f papers -q @*[year={{y}}]* %}
+{% bibliography %}
 
 <p>* indicates equal contribution</p>
 
