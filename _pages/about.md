@@ -18,6 +18,13 @@ I am a second year PhD student in Electrical Engineering and Computer Sciences (
 
 Prior to my PhD studies, I worked on the Software Assurance Research and Applications team at the Johns Hopkins University Applied Physics Laboratory to provide formal methods to government sponsors, and I obtained a Bachelor’s degree in Computer Science from Indiana University, Bloomington. 
 
+
+<div align="left">
+  <a href="mailto:{{ site.email | encode_email }}" title="Email"><i class="fas fa-envelope" style="font-size:180%;"></i></a>&emsp;
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size:180%;"></i></a>&emsp;
+  <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin" style="font-size:160%;"></i></a>
+</div><br />
+
 ##### Research interests
 
 `reachability analysis`&ensp;$$\cdot$$&ensp;`formal methods`&ensp;$$\cdot$$&ensp;`data-driven control`&ensp;$$\cdot$$&ensp;`safety`
