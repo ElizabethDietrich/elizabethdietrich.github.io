@@ -9,7 +9,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 <div class="publications">
   
-<p><a href='https://scholar.google.com/citations?user=tnOczoAAAAAJ&hl=en'>Here</a> is the link to my Google Scholar.</p>
+<!-- <p><a href='https://scholar.google.com/citations?user=tnOczoAAAAAJ&hl=en'>Here</a> is the link to my Google Scholar.</p> -->
 <br />
 
 {% bibliography %}
