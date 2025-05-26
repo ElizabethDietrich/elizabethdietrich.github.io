@@ -20,6 +20,7 @@ Prior to my PhD studies, I worked on the Software Assurance Research and Applica
 
 
 <div align="left">
+  <a href="CV_ElizabethDietrich.pdf" title="CV"><i class="ai ai-cv"  style="font-size:200%;"></i></a>&emsp;
   <a href="mailto:{{ site.email | encode_email }}" title="Email"><i class="fas fa-envelope" style="font-size:180%;"></i></a>&emsp;
   <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size:180%;"></i></a>&emsp;
   <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin" style="font-size:160%;"></i></a>
