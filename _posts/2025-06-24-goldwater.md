@@ -62,13 +62,14 @@ Another important aspect of my educational journey has been being a woman in a m
 	Mentors: Professor Paul Macklin, Randy Heiland, John Metzcar
 ```
 3. The bacterial flagellum represents one of the largest bacterial surface structures and enables bacteria to swim through liquids or swarm over surfaces. Very little is known on how bacteria reproducibly establish place and number of their flagella during each round of cell division. Two proteins, FlhF and FlhG have been found to be essential in this process. These proteins interact similarly to the Min-protein system. I solved the reaction-diffusion equations for Min protein interactions in static cells, described by the system of parabolic PDEs. Specifically, I determined that increasing the diffusion constants for cytosolic MinD and MinE (consistent with the expected effect of cellular growth on the spread of cytoplasmic concentrations) was required to produce the expected spatiotemporal oscillations. Building on the current MinCDE modeling framework and results, we will construct a reaction-diffusion model describing the biochemical interactions of FlhF/G proteins, their membrane binding and localization kinetics to flagellar basal bodies, using existing experimental results from wild-type and mutant cells.
->
+
+
 2. Briefly describe up to five (5) research skills you have developed that will be important going forward in your research career. You may have acquired these skills by participating in one of the research projects you have reported, from courses, or from other life experiences.
 >
-1. Mathematical Modeling: I have described physical systems using governing equations, supplementary sub-models, constraints, and initial and boundary conditions. I have worked with dynamic systems and have learned to represent them using differential equations.  <br>
-2. Coding: I have expanded my programming skills to mathematical programming which allows me to optimize equations, compute values of models, and estimate parameter values. I am proficient in a wide range of programming languages including MATLAB, R, C++, Java, Scheme, and many more.  <br>
-3. Cell Culture: Wet lab knowledge  <br>
-4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
+>1. Mathematical Modeling: I have described physical systems using governing equations, supplementary sub-models, constraints, and initial and boundary conditions. I >have worked with dynamic systems and have learned to represent them using differential equations.  
+>2. Coding: I have expanded my programming skills to mathematical programming which allows me to optimize equations, compute values of models, and estimate parameter >values. I am proficient in a wide range of programming languages including MATLAB, R, C++, Java, Scheme, and many more. 
+>3. Cell Culture: Wet lab knowledge  
+>4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
 >
 <hr>
 ## Other Activities and Accomplishments
