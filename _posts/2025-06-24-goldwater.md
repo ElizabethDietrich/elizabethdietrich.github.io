@@ -20,7 +20,7 @@ The purpose of this post is to provide insight into the process of applying for 
 
 ## Application Components
 
-When I applied in 2019-2020, the application contained the following components:
+When I applied in 2019-2020, the application contained the following components. I have included all of my answers below. 
 <hr>
 #### Career Goals/Professional Aspirations:
  
