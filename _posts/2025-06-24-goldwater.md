@@ -2,7 +2,7 @@
 layout: post
 title: Applying for the Goldwater Scholarship
 date: 2025-06-24 
-description: Insight into the process of applying for the Goldwater Scholarship
+description: Insight into the process of applying for the Goldwater Scholarship as a sophmore in college.
 related_posts: false
 toc:
   beginning: true
