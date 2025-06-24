@@ -13,6 +13,7 @@ The purpose of this post is to provide insight into the process of applying for 
 <hr>
 
 ## What is the Goldwater Scholarship?
+The Goldwater Scholarship Program is one of the oldest and most prestigious national scholarships in the natural sciences, engineering, and mathematics in the United States. Per the Goldwater [website](https://goldwaterscholarship.gov/), the scholarship “seeks to identify, encourage, and financially support college sophomores and juniors who show exceptional promise of becoming this Nation’s next generation of research leaders in these fields”.  
 
 
 <hr>
