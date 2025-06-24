@@ -27,7 +27,7 @@ ninja.data = [{
       
         title: "Applying for the Goldwater Scholarship",
       
-      description: "Insight into the process of applying for the Goldwater Scholarship as a junior in college.",
+      description: "Insight into the process of applying for the Goldwater Scholarship as a sophmore in college.",
       section: "Posts",
       handler: () => {
         
