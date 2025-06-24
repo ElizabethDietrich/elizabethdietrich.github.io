@@ -73,13 +73,13 @@ Another important aspect of my educational journey has been being a woman in a m
 >4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
 >
 <hr>
-## Other Activities and Accomplishments
+#### Other Activities and Accomplishments
 
 <hr>
-## Research Essay
+#### Research Essay
 
 <hr>
-## Letters of Recommendation
+#### Letters of Recommendation
 
 
 <hr>
