@@ -15,6 +15,7 @@ As a junior in college, I was graciously awarded the Goldwater Scholarship. The 
 ## What is the Goldwater Scholarship?
 The Goldwater Scholarship Program is one of the oldest and most prestigious national scholarships in the natural sciences, engineering, and mathematics in the United States. Per the Goldwater [website](https://goldwaterscholarship.gov/), the scholarship “seeks to identify, encourage, and financially support college sophomores and juniors who show exceptional promise of becoming this Nation’s next generation of research leaders in these fields”.  
 
+The scholarship is awarded based upon merit and favors students who show a strong passion and dedication to a career in research. In my experience, most awardees go on to pursue a PhD. 
 
 <hr>
 
