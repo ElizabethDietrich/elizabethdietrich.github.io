@@ -70,6 +70,11 @@ Another important aspect of my educational journey has been being a woman in a m
 3. Cell Culture: Wet lab knowledge  <br>
 4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
 >
+<hr>
+## Other Activities and Accomplishments
+
+<hr>
+## Research Essay
 
 <hr>
 ## Letters of Recommendation
