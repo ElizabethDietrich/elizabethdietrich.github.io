@@ -47,13 +47,20 @@ Another important aspect of my educational journey has been being a woman in a m
 1. In chronological order, from earliest to most recent, list up to five research projects you consider to be your most significant work associated with your interests in the sciences, mathematics or engineering. Briefly describe the project, being certain to include a description of your involvement in and contributions to the work. Outputs of projects - papers and presentations - are of particular interest to those reviewing your materials. These help a reviewer calibrate the significance of the work. Please be certain to provide this information using the citation guidance/examples provided below. Finally, list up to three individuals who provided you with significant mentoring on the project.
  
 >
-1. Microglial cells migrate in response to endogenous lipids. In neurodegenerative diseases, the processes these cells undergo is interrupted and they cannot function properly. N-arachinodoyl glycine (NAGly), an endogenous lipid,causes concentration dependent migration. I was curious what structurally similar endogenous lipids to NAGly also induced migration in BV2 microglial cells. In order to study this, I exposed BV2 microglial cells to structurally analogous endogenous lipids and observed if the cells migrated. Using a Boyden Chamber and serum starved BV2 cells, I created stained filters of the migrated cells and counted the cells using a structured counting system. I found that BV2 microglial cells responded in some degree to every lipid introduced to them. This could be contributed to the lipids interacting with calcium receptors, causing calcium to act as a secondary messenger and resulting in migration. This provided a future direction for this project. 
-> 2017 Integrated Freshman Learning Experience Summer Presentation
-> 	Boyden Chamber Migration Assays with BV2 Microglial Cells
-> 	Liz Dietrich
-> 	Mentor: Professor Heather Bradshaw
->
-
+1. Microglial cells migrate in response to endogenous lipids. In neurodegenerative diseases, the processes these cells undergo is interrupted and they cannot function properly. N-arachinodoyl glycine (NAGly), an endogenous lipid,causes concentration dependent migration. I was curious what structurally similar endogenous lipids to NAGly also induced migration in BV2 microglial cells. In order to study this, I exposed BV2 microglial cells to structurally analogous endogenous lipids and observed if the cells migrated. Using a Boyden Chamber and serum starved BV2 cells, I created stained filters of the migrated cells and counted the cells using a structured counting system. I found that BV2 microglial cells responded in some degree to every lipid introduced to them. This could be contributed to the lipids interacting with calcium receptors, causing calcium to act as a secondary messenger and resulting in migration. This provided a future direction for this project.
+```
+2017 Integrated Freshman Learning Experience Summer Presentation
+ 	Boyden Chamber Migration Assays with BV2 Microglial Cells
+ 	Liz Dietrich
+ 	Mentor: Professor Heather Bradshaw
+```
+2. Cancer is an extremely complex process that simulations can help us test rules to see what matches reality. Breast cancer cells become invasive and metastasize in low oxygen. Biologists at John Hopkins use color-changing red/green fluorescent protein markers to track cell state. I modeled these fluorescent protein dynamics as two ordinary differential equations in each individual tumor cell. Through my simulation of over a day, I found many normoxic, healthy cells were shown to experience hypoxia, creating a dead center of the tumor. However, there was a lag in activating fluorescent markers which means the colors did not reflect the current state accurately. Even with this defect, future directions could be derived which included adding vasculature to the model tumor, changing the cell cycle speed, and adding the invasion of blood vessels.
+```
+2017 Indiana University SICE Fall Poster Symposium
+	Simulating Cancer Behavior
+	Liz Dietrich, Andrew Gotts, Brandon Fischer, Davis Joseph, Noah Baker
+	Mentors: Professor Paul Macklin, Randy Heiland, John Metzcar
+```
 <hr>
 
 ## Letters of Recommendation
