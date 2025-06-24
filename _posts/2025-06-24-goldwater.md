@@ -42,6 +42,18 @@ Part of pursuing a degree in computer science involves being exposed to the glam
 I grew up in a small, suburban town in Indiana outside of Chicago that was equally influenced by the city and the surrounding rural communities. Growing up there was happy but not idyllic. I benefited from a strong sense of community and demographic privilege, but because of the dominance of blue-collar professions never once thought it could be possible to make a career out of intellectual work. Conducting research just wasn’t something that you could do. It wasn’t until I watched my oldest brother get involved in research while in college that I realized you could answer abstract questions for a living. His initial modeling has been continued by my research mentors, and I now feel that intellectual work is what will fulfill me. 
 Another important aspect of my educational journey has been being a woman in a male-dominated field. Community is what allows us to find joy in our work and provides purpose for why we do our work. The real problem with being the only woman in your class is that if affects the social dynamics of that community. I have dealt with this by seeking out women role models like my research mentor who can help guide me as I grow into my own role in the field and as a leader. I hope one day to be that mentor for someone else.
 >
+<hr>
+#### Research Projects and Skills 
+
+<hr>
+
+## Letters of Recommendation
 
 
+<hr>
+
+## Advice
+
+
+<hr>
 
