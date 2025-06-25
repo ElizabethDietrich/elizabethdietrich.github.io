@@ -21,7 +21,7 @@ The scholarship is awarded based upon merit and favors students who show a stron
 
 ## Application Components
 
-When I applied in 2019-2020, the application contained the following components. I have included all of my answers below. 
+When I applied in 2019-2020, the application contained the following major components. I have included all of my answers below. 
 <hr>
 #### Career Goals/Professional Aspirations
  
