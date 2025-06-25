@@ -19,6 +19,10 @@ The scholarship is awarded based upon merit and favors students who show a stron
 
 <hr>
 
+## My Background
+
+<hr>
+
 ## Application Components
 
 When I applied in 2019-2020, the application contained the following major components. I have included all of my answers below. 
