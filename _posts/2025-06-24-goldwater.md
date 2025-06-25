@@ -62,7 +62,14 @@ Another important aspect of my educational journey has been being a woman in a m
 	Liz Dietrich, Andrew Gotts, Brandon Fischer, Davis Joseph, Noah Baker
 	Mentors: Professor Paul Macklin, Randy Heiland, John Metzcar
 ```
->_Project 3:_ The bacterial flagellum represents one of the largest bacterial surface structures and enables bacteria to swim through liquids or swarm over surfaces. Very little >is known on how bacteria reproducibly establish place and number of their flagella during each round of cell division. Two proteins, FlhF and FlhG have been found to >be essential in this process. These proteins interact similarly to the Min-protein system. I solved the reaction-diffusion equations for Min protein interactions in >static cells, described by the system of parabolic PDEs. Specifically, I determined that increasing the diffusion constants for cytosolic MinD and MinE (consistent >with the expected effect of cellular growth on the spread of cytoplasmic concentrations) was required to produce the expected spatiotemporal oscillations. Building on >the current MinCDE modeling framework and results, we will construct a reaction-diffusion model describing the biochemical interactions of FlhF/G proteins, their >membrane binding and localization kinetics to flagellar basal bodies, using existing experimental results from wild-type and mutant cells.
+>_Project 3:_ Personal social network data can be used to design, implement, and disseminate health behavior interventions; however, the interface design for collecting this data is tedious and not ideal for populations with low literacy levels. EnsoTM is an open-source, mobile-ready, touch-screen data collection system that uses principles of clear health communication to collect and deliver accurate data. I designed additional features for this platform and implemented usability testing to collect feedback for future improvements. After drafting a wireframe and implementing the new designs in EnsoTM, the new platform was tested on students. While this was not the target population, it provided feedback that gave the project a future direction. I concluded that there needed to be more visualize stimulation, for even our test subjects responded better to graphics. In the future, graphics will replace the text and the new platform will be tested on the target, low literacy population. 
+```
+	2018 Opportunities for Undergraduate Research in Computer Science
+		Usability Testing of a Data Collection Platform for Addressing Health Disparities
+		Liz Dietrich, Adriana Navarro, Atmana Joshi, Kat Law, Brittany Davis
+		Mentor: Dr. Kate Eddens
+```
+>_Project 4:_ The bacterial flagellum represents one of the largest bacterial surface structures and enables bacteria to swim through liquids or swarm over surfaces. Very little >is known on how bacteria reproducibly establish place and number of their flagella during each round of cell division. Two proteins, FlhF and FlhG have been found to >be essential in this process. These proteins interact similarly to the Min-protein system. I solved the reaction-diffusion equations for Min protein interactions in >static cells, described by the system of parabolic PDEs. Specifically, I determined that increasing the diffusion constants for cytosolic MinD and MinE (consistent >with the expected effect of cellular growth on the spread of cytoplasmic concentrations) was required to produce the expected spatiotemporal oscillations. Building on >the current MinCDE modeling framework and results, we will construct a reaction-diffusion model describing the biochemical interactions of FlhF/G proteins, their >membrane binding and localization kinetics to flagellar basal bodies, using existing experimental results from wild-type and mutant cells.
 >
 2. Briefly describe up to five (5) research skills you have developed that will be important going forward in your research career. You may have acquired these skills by participating in one of the research projects you have reported, from courses, or from other life experiences.
 >
@@ -70,10 +77,15 @@ Another important aspect of my educational journey has been being a woman in a m
 >2. Coding: I have expanded my programming skills to mathematical programming which allows me to optimize equations, compute values of models, and estimate parameter >values. I am proficient in a wide range of programming languages including MATLAB, R, C++, Java, Scheme, and many more. 
 >3. Cell Culture: Wet lab knowledge  
 >4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
->
 <hr>
 #### Other Activities and Accomplishments
-
+In order of importance to you, list up to five activities and/or accomplishments you were involved in while in college. These activities (e.g., clubs, student government, music or art activities, community activities, sports activities, etc.) may have been affiliated with your college or university or they may have been associated with other organizations. 
+> 1. Undergraduate Instructor : I am an Undergraduate Instructor for Introduction to Computer Science. The course teaches the fundamentals of programming. I assist in >lectures, lead a lab section, host office hours, and grade assignments, quizzes, and exams. 
+> 2. Director of Alumni Relations Office of Scholarships : I travel to major cities around the Midwest to recruit prospective IU students. I ensure the Office of >Scholarships has updated records of former students, and I establish long-term relationships with alumni by inviting them to current events. 
+> 3. Director of Computers Indiana University Panhellenic : I maintain the data systems used by the Panhellenic Association at Indiana University. I control the flux of >data between organizations and handle any technical issues that arise. This involves overseeing the records of over two thousand women. 
+> 4. Opportunities for Undergraduate Research in Computer Science : I attended a 3-day workshop in which I showed that the data collection platform EnsoTM
+>required changes in order to be used by low-literacy populations. I designed and implemented graphics and did a usability assessment of my suggested improvements.  
+> 5.  Racket Summer School Participant : I worked on the framework for language-oriented programming with the creator of Racket. This allows easy creation and >integration of embedded domain-specific languages. 
 <hr>
 #### Research Essay
 
