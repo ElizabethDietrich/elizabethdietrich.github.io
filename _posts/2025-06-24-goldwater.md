@@ -92,7 +92,11 @@ Another important aspect of my educational journey has been being a woman in a m
 > 5.  Racket Summer School Participant : I worked on the framework for language-oriented programming with the creator of Racket. This allows easy creation and >integration of embedded domain-specific languages. 
 <hr>
 #### Research Essay
+The Research Essay is described in detail [here](https://goldwaterscholarship.gov/developing-the-research-essay/).
 
+At this point in my academic journey, I struggled to balance technical terminology and relatability. This was one of the first technical reports I had written on my research, and I found myself a bit lost in the technical jargon. It is crucial to present your research and contributions in a balanced way that allows someone who is broadly trained in STEM, but may not be an expert in your sub-field, to understand your work. 
+
+[Goldwater-Dietrich-final.pdf](https://github.com/user-attachments/files/20933877/Goldwater-Dietrich-final.pdf)
 <hr>
 #### Letters of Recommendation
 
