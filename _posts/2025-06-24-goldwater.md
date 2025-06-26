@@ -94,7 +94,11 @@ Another important aspect of my educational journey has been being a woman in a m
 #### Research Essay
 The Research Essay is described in detail [here](https://goldwaterscholarship.gov/developing-the-research-essay/).
 
-At this point in my academic journey, I struggled to balance technical terminology and relatability. This was one of the first technical reports I had written on my research, and I found myself a bit lost in the technical jargon. It is crucial to present your research and contributions in a balanced way that allows someone who is broadly trained in STEM, but may not be an expert in your sub-field, to understand your work. 
+I was advised by previous scholars to write my essay about the research project I was most familiar with. This could be a completed project that you have already written a publication on, or, in my case, an active research project. I believe the two most important factors when choosing a topic include : 1) the ability to discuss how you personally contributed to the project, and 2) the ability to demonstrate extensive knowledge and passion for the topic.
+
+While writing my Research Essay, I struggled to balance technical terminology and relatability. This was one of the first technical reports I had written on my research, and I found myself a bit lost in the technical jargon. It is crucial to present your research and contributions in a balanced way that allows someone who is broadly trained in STEM, but may not be an expert in your sub-field, to understand your work. It is very important that your Research Essay is clearly written, accessible to your general field, and emphasizes your contributions and ability to perform independent research. 
+
+I have provided my winning essay for reference below.
 
 [Goldwater-Dietrich-final.pdf](https://github.com/user-attachments/files/20933877/Goldwater-Dietrich-final.pdf)
 <hr>
