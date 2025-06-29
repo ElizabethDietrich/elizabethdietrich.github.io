@@ -21,6 +21,9 @@ The scholarship is awarded based upon merit and favors students who show a stron
 
 ## My Background
 
+I was a junior at Indiana University, Bloomington studying Computer Science and Mathematics. I had begun my undergraduate degree as a Biochemistry major, meaning most of the research I had completed prior to winning this award fell under Life Sciences. Because I explored a lot of different subject areas in my search for a topic I was passionate about, I had no significant research contributions when I applied for the Goldwater (i.e. no publications). However, I had been working on a project in Biophysics on and off for over a year, so I decided to apply with that project in mind. 
+
+I believe the Goldwater looks for individuals who show passion and potential for completing exceptional research, but does not necessarily require you to have already done so (realistically, most undergraduates won’t do so). Further, I feel the Goldwater looks for individuals who have strived to go above and beyond the resources easily available to them. For instance, at my university, undergraduates had to go out of their way to find research opportunities (i.e. cold emailing professors, talking to grad students, etc.). Showing, through anecdotes, that you are a student who is able to take initiative in your academic career is one way to show your potential to succeed in academia. This is what I focused on. 
 <hr>
 
 ## Application Components
