@@ -12,3 +12,48 @@
   url = 	 {https://proceedings.mlr.press/v242/dietrich24a.html},
   abstract = 	 {Many of the popular reachability analysis methods rely on the existence of system models. When system dynamics are uncertain or unknown, data-driven techniques must be utilized instead. In this paper, we propose an approach to data-driven reachability that provides a probabilistic guarantee of correctness for these systems through nonconvex scenario optimization. We pose the problem of finding reachable sets directly from data as a chance-constrained optimization problem, and present two algorithms for estimating nonconvex reachable sets: (1) through the union of partition cells and (2) through the sum of radial basis functions. Additionally, we investigate numerical examples to demonstrate the capability and applicability of the introduced methods to provide nonconvex reachable set approximations.}
 }
+
+@article{Dietrich2025_a,
+	title        = {Data-Driven Reachability with Scenario Optimization and the Holdout Method},
+	author       = {Elizabeth Dietrich and Rosalyn Devonport and Stephen Tu and Murat Arcak},
+	year         = {2025},
+	preview      = {simple_reach_tube.png},
+  booktitle = {Accepted for Proc. of the {IEEE} Conference on Decision and Control (CDC)},
+	eprint={2504.06541},
+	archivePrefix={arXiv},
+	arxiv={2504.06541},
+	url={https://arxiv.org/abs/2504.06541},
+  	abstract ={Reachability analysis is an important method in providing
+		      safety guarantees for systems with unknown or uncertain
+		      dynamics. Due to the computational intractability of exact
+		      reachability analysis for general nonlinear,
+		      high-dimensional systems, recent work has focused on the
+		      use of probabilistic methods for computing approximate reachable
+		      sets. In this work, we advocate for the use of a general
+		      purpose, practical, and sharp method for data-driven
+		      reachability: the holdout method. Despite the simplicity of
+		      the holdout method, we show---on several numerical examples
+		      including scenario-based reach tubes---that the resulting
+		      probabilistic bounds are substantially sharper and require
+		      fewer samples than existing methods for data-driven
+		      reachability. Furthermore, we complement our work with a
+		      discussion on the necessity of probabilistic reachability
+		      bounds. We argue that any method that attempts to
+		      de-randomize the bounds, by converting the guarantees to
+		      hold deterministically, requires (a) an exponential in
+		      state-dimension amount of samples to achieve non-vacuous
+		      guarantees, and (b) extra assumptions on the dynamics.}
+}
+
+@misc{preprint1,
+  preview={voyagerimg.png},
+  title={Symbolic Control for Autonomous Docking of Marine Surface Vessels}, 
+  author={Elizabeth Dietrich* and Emir Cem Gezer* and Bingzhuo Zhong and Murat Arcak and Majid Zamani and Roger Skjetne and Asgeir Johan Sørensen},
+  abstract={Docking marine surface vessels remains a largely manual task due to its safety-critical nature. In this paper, we develop a hierarchical symbolic control architecture for autonomous docking maneuvers of a dynamic positioning vessel, to provide formal safety guarantees. At the upper-level, we treat the vessel's desired surge, sway, and yaw velocities as control inputs and synthesize a symbolic controller in real-time. The desired velocities are then transmitted to and executed by the vessel's low-level velocity feedback control loop. Given a synthesized symbolic controller, we investigate methods to optimize the performance of the proposed control scheme for the docking task. The efficacy of this methodology is evaluated on a low-fidelity simulation model of a marine surface vessel in the presence of static and dynamic obstacles and, for the first time, through physical experiments on a scaled model vessel.},
+  year={2025},
+  eprint={2501.13199},
+  booktitle = {Accepted for Proc. of the {IEEE} Conference on Decision and Control (CDC)},
+  archivePrefix={arXiv},
+  arxiv = {2501.13199},
+  url={https://arxiv.org/abs/2501.13199}, 
+}
