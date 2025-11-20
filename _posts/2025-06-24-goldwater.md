@@ -106,11 +106,9 @@ I have provided my winning essay for reference below.
 [Goldwater-Dietrich-final.pdf](https://github.com/user-attachments/files/20933877/Goldwater-Dietrich-final.pdf)
 <hr>
 #### Letters of Recommendation
+As a junior, I was not confident in my decision of what professors to ask to support my application and what material to ask them to include. I knew the most important letter would come from my research advisor, as I wrote my research essay based on our work. Additionally, I had been an undergraduate instructor for multiple semesters. Therefore, I asked the supervising professor to write me a letter of recommendation as well. However, deciding on the third letter writer proved more challenging. I first asked a professor of a graduate-level mathematics course I was taking. However, I settled on my old research advisor from my time in the life sciences. The committee at my university encouraged this switch, based on the latter’s knowledge of my research abilities. They felt this was more important than course-work. Given the knowledge I have now, I agree that it is most important to choose recommenders who can speak on your ability to work and contribute independently to research or related activities. 
 
-
-<hr>
-
-## Advice
+Additionally, I was advised that it is particularly helpful if your recommenders can provide a comparison of you to other students they have known and worked with who have successfully pursued doctoral degrees or previously won the Goldwater Scholarship. I sent my letter writers the link to this [page](https://goldwaterscholarship.gov/letter-writing-guidance-recommenders/), for further guidance. 
 
 
 <hr>
