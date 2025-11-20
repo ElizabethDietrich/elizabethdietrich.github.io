@@ -80,8 +80,8 @@ Another important aspect of my educational journey has been being a woman in a m
 >
 2. Briefly describe up to five (5) research skills you have developed that will be important going forward in your research career. You may have acquired these skills by participating in one of the research projects you have reported, from courses, or from other life experiences.
 >
->1. Mathematical Modeling: I have described physical systems using governing equations, supplementary sub-models, constraints, and initial and boundary conditions. I >have worked with dynamic systems and have learned to represent them using differential equations.  
->2. Coding: I have expanded my programming skills to mathematical programming which allows me to optimize equations, compute values of models, and estimate parameter >values. I am proficient in a wide range of programming languages including MATLAB, R, C++, Java, Scheme, and many more. 
+>1. Mathematical Modeling: I have described physical systems using governing equations, supplementary sub-models, constraints, and initial and boundary conditions. I have worked with dynamic systems and have learned to represent them using differential equations.  
+>2. Coding: I have expanded my programming skills to mathematical programming which allows me to optimize equations, compute values of models, and estimate parameter  values. I am proficient in a wide range of programming languages including MATLAB, R, C++, Java, Scheme, and many more. 
 >3. Cell Culture: Wet lab knowledge  
 >4. Data analysis: I have modeled various types of data, including elliptical equations that exhibit oscillations.
 <hr>
