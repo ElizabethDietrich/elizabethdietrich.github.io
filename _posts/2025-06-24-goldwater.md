@@ -87,11 +87,11 @@ Another important aspect of my educational journey has been being a woman in a m
 <hr>
 #### Other Activities and Accomplishments
 1. In order of importance to you, list up to five activities and/or accomplishments you were involved in while in college. These activities (e.g., clubs, student government, music or art activities, community activities, sports activities, etc.) may have been affiliated with your college or university or they may have been associated with other organizations. 
-> 1. Undergraduate Instructor : I am an Undergraduate Instructor for Introduction to Computer Science. The course teaches the fundamentals of programming. I assist in >lectures, lead a lab section, host office hours, and grade assignments, quizzes, and exams. 
-> 2. Director of Alumni Relations Office of Scholarships : I travel to major cities around the Midwest to recruit prospective IU students. I ensure the Office of >Scholarships has updated records of former students, and I establish long-term relationships with alumni by inviting them to current events. 
-> 3. Director of Computers Indiana University Panhellenic : I maintain the data systems used by the Panhellenic Association at Indiana University. I control the flux of >data between organizations and handle any technical issues that arise. This involves overseeing the records of over two thousand women. 
+> 1. Undergraduate Instructor : I am an Undergraduate Instructor for Introduction to Computer Science. The course teaches the fundamentals of programming. I assist in  lectures, lead a lab section, host office hours, and grade assignments, quizzes, and exams. 
+> 2. Director of Alumni Relations Office of Scholarships : I travel to major cities around the Midwest to recruit prospective IU students. I ensure the Office of  Scholarships has updated records of former students, and I establish long-term relationships with alumni by inviting them to current events. 
+> 3. Director of Computers Indiana University Panhellenic : I maintain the data systems used by the Panhellenic Association at Indiana University. I control the flux of  data between organizations and handle any technical issues that arise. This involves overseeing the records of over two thousand women. 
 > 4. Opportunities for Undergraduate Research in Computer Science : I attended a 3-day workshop in which I showed that the data collection platform EnsoTM
->required changes in order to be used by low-literacy populations. I designed and implemented graphics and did a usability assessment of my suggested improvements.  
+required changes in order to be used by low-literacy populations. I designed and implemented graphics and did a usability assessment of my suggested improvements.  
 > 5.  Racket Summer School Participant : I worked on the framework for language-oriented programming with the creator of Racket. This allows easy creation and >integration of embedded domain-specific languages. 
 <hr>
 #### Research Essay
