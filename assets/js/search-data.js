@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-research-as-an-undergrad",
+        },{id: "post-undergraduate-research",
       
-        title: "Research as an Undergrad",
+        title: "Undergraduate Research",
       
-      description: "What does undergrad research entail, and who should get involved.",
+      description: "What does undergraduate research entail and how to get involved.",
       section: "Posts",
       handler: () => {
         
