@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-applying-for-the-goldwater-scholarship",
+        },{id: "post-research-as-an-undergrad",
+      
+        title: "Research as an Undergrad",
+      
+      description: "What does undergrad research entail, and who should get involved.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/undergrad-research/";
+        
+      },
+    },{id: "post-applying-for-the-goldwater-scholarship",
       
         title: "Applying for the Goldwater Scholarship",
       
