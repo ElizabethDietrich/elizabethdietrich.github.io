@@ -14,7 +14,7 @@ Probabilistic guarantees provide the rigorous evidence needed to ensure safe sys
 
 <iframe 
   src="../assets/img/pac_figure.pdf"
-  style="float:right; width:300px; height:400px; margin:0 0 1em 1em; border:none;">
+  style="float:right; border:none;">
 </iframe>
 
 <p>
