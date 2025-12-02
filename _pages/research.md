@@ -17,13 +17,13 @@ I focus on probabilistically capturing the behavior, uncertainty, and risk of sy
 My research represents a key step in achieving risk-aware, safe decision making for autonomous agents by understanding and bounding unknown system behavior in a tractable and interpretable manner.
 </p>
 
-<h3> Data-Driven Reachability Analysis</h3>
+<h3> data-driven reachability analysis</h3>
 <p> Data-driven reachability analysis relies on simulation or experimentation to learn probabilistically bounded sets directly from data. 
 It can be utilized across applications, such as safe motion planning and collision avoidance, or software verification and bug detection. 
 However, to achieve meaningful probability bounds, the amount of required data remains too high for real-time applications. 
 My research aims to address this problem by estimating tight reachable sets with probabilistic guarantees, while minimizing computational and sample complexity. </p>
 
-<h3> Probabilistic Risk Frameworks </h3>
+<h3> probabilistic risk frameworks </h3>
 <p> Real-world systems must adhere to nuanced safety and performance requirements while accounting for various forms of uncertainty and risk. 
 For instance, imagine a surface vessel performing evasion maneuvers while subject to wave and wind disturbances. 
 To accurately conduct motion planning, the vessel must have the ability to estimate environmental uncertainty, account for various sources of risk (e.g., stationary obstacles, other traffic participants, shallow waters, etc.), and comply with requirements originating in natural language (e.g., "maintain a safe distance from all other vessels" or "maintain a safe speed"). 
@@ -31,4 +31,3 @@ Signal temporal logic offers a flexible framework to encode and measure such nat
 However, standard signal temporal logic does not offer means to incorporate uncertainty and only monitors one form of risk at a time. 
 Therefore, my research aims to mitigate this gap by uniting risk estimation, reachability analysis, and uncertainty quantification. </p>
 
-</div>
