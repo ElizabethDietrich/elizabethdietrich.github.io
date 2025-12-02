@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Research as an Undergrad
+title: Undergraduate Research
 date: 2025-06-24 
-description: What does undergrad research entail, and who should get involved.
+description: What does undergraduate research entail and how to get involved.
 related_posts: false
 toc:
   beginning: true
