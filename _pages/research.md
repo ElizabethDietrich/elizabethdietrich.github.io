@@ -11,10 +11,10 @@ Specifically, <b>I am interested in statistical verification of autonomous syste
 As automated decision making is integrated into safety-critical systems, engineers and regulators must provide quantitative guarantees, not just empirical evidence, to certify these technologies for safe and efficient real-world deployment. 
 Probabilistic guarantees provide the rigorous evidence needed to ensure safe system behavior and meet certification standards, even under rare or unexpected conditions --- a prominent method for achieving this is reachability analysis.</p>
 
-<div style="float:right; width:40%; margin-left:20px;">
+<div style="width:60%; margin:20px auto; text-align:center;">
   <iframe 
     src="../assets/img/pac_figure.pdf"
-    style="width:100%; height:400px; border:none;">
+    style="border:none;">
   </iframe>
 </div>
 
