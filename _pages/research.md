@@ -12,7 +12,7 @@ As automated decision making is integrated into safety-critical systems, enginee
 Probabilistic guarantees provide the rigorous evidence needed to ensure safe system behavior and meet certification standards, even under rare or unexpected conditions --- a prominent method for achieving this is reachability analysis.</p>
 
 <div style="text-align:center; margin:20px 0;">
-  <img src="../assets/img/pac_figure.png" style="max-width:100%; height:auto;">
+  <img src="../assets/img/pac_figure.png" style="max-width:75%; height:auto;">
 </div>
 
 <p>
