@@ -1,10 +1,28 @@
 @misc{Dietrich2025,
-      title        = {pacSTL: PAC-Bounded Signal Temporal Logic from Data-Driven Reachability Analysis},
-      author       = {Elizabeth Dietrich* and Hanna Krasowski* and {Emir Cem} Gezer and Roger Skjetne and Asgeir Johan Sørensen and Murat Arcak},
-     year         = {2025},
-     archiveprefix = {arXiv},
-     arxiv = {2511.00934},
+    title        = {pacSTL: PAC-Bounded Signal Temporal Logic from Data-Driven Reachability Analysis},
+    author       = {Elizabeth Dietrich* and Hanna Krasowski* and {Emir Cem} Gezer and Roger Skjetne and Asgeir Johan Sørensen and Murat Arcak},
+    year         = {2025},
+    archiveprefix = {arXiv},
+    arxiv = {2511.00934},
     video ={https://www.youtube.com/watch?v=0dHViM2WCEM},
     preview = {preprint_pacSTL.png},
     abstract = {Real-world robotic systems must comply with safety requirements in the presence of uncertainty. To define and measure requirement adherence, Signal Temporal Logic (STL) offers a mathematically rigorous and expressive language. However, standard STL cannot account for uncertainty. We address this problem by presenting pacSTL, a framework that combines Probably Approximately Correct (PAC) bounded set predictions with an interval-extension of STL through optimization problems on the atomic proposition level. pacSTL provides PAC-bounded robustness intervals on the specification level that can be utilized in monitoring. We demonstrate the effectiveness of this approach through maritime navigation and analyze the efficiency and scalability of pacSTL through simulation and real-world experimentation on model vessels.}
+}
+@misc{Dietrich2026a,
+      title={Probably Approximately Correct (PAC) Guarantees for Data-Driven Reachability Analysis: A Theoretical and Empirical Comparison}, 
+      author={Elizabeth Dietrich* and Hanna Krasowski* and Murat Arcak},
+      year={2026},
+      arxiv={2604.02953},
+      archivePrefix={arXiv},
+      preview = {comparison.png},
+      abstract={Reachability analysis evaluates system safety, by identifying the set of states a system may evolve within over a finite time horizon. In contrast to model-based reachability analysis, data-driven reachability analysis estimates reachable sets and derives probabilistic guarantees directly from data. Several popular techniques for validating reachable sets -- conformal prediction, scenario optimization, and the holdout method -- admit similar Probably Approximately Correct (PAC) guarantees. We establish a formal connection between these PAC bounds and present an empirical case study on reachable sets to illustrate the computational and sample trade-offs associated with these methods. We argue that despite the formal relationship between these techniques, subtle differences arise in both the interpretation of guarantees and the parameterization. As a result, these methods are not generally interchangeable. We conclude with practical advice on the usage of these methods.}
+}
+@misc{Dietrich2026b,
+      title={Importance Sampling for Statistical Certification of Viable Initial Sets}, 
+      author={Elizabeth Dietrich and Hanna Krasowski and Vegard Flovik and Murat Arcak},
+      year={2026},
+      arxiv={2604.02939},
+      archivePrefix={arXiv},
+      preview={gp_failset.png},
+      abstract={We study the problem of statistically certifying viable initial sets (VISs) -- sets of initial conditions whose trajectories satisfy a given control specification. While VISs can be obtained from model-based methods, these methods typically rely on simplified models. We propose a simulation-based framework to certify VISs by estimating the probability of specification violations under a high-fidelity or black-box model. Since detecting these violations may be challenging due to their scarcity, we propose a sample-efficient framework that leverages importance sampling to target high-risk regions. We derive an empirical Bernstein inequality for weighted random variables, enabling finite-sample guarantees for importance sampling estimators. We demonstrate the effectiveness of the proposed approach on two systems and show improved convergence of the resulting bounds on an Adaptive Cruise Control benchmark.}
 }
