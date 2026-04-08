@@ -8,7 +8,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 <div class="publications">
-
+<p>* indicates equal contribution</p>
 <!-- <p><a href='https://scholar.google.com/citations?user=tnOczoAAAAAJ&hl=en'>Here</a> is the link to my Google Scholar.</p> -->
 <br />
 <h3>preprints</h3>
@@ -16,8 +16,6 @@ nav_order: 2
 <br />
 <h3>published</h3>
 {% bibliography -f papers %}
-
-<p>* indicates equal contribution</p>
 
 </div>
 
