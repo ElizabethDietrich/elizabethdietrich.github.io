@@ -31,7 +31,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/undergrad-research/";
+          window.location.href = "/2025/12/02/undergrad-research.html";
         
       },
     },{id: "post-applying-for-the-goldwater-scholarship",
@@ -42,7 +42,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/goldwater/";
+          window.location.href = "/2025/06/24/goldwater.html";
         
       },
     },{id: "news-a-simple-inline-announcement",
