@@ -5,8 +5,8 @@ permalink: /
 
 profile:
   align: right
-  image: linkedinphoto.jpg
-  image_circular: false # crops the image to make it circular
+  image: elizabeth_dietrich.jpg
+  image_circular: true # crops the image to make it circular
 
 
 news: false # includes a list of news items
