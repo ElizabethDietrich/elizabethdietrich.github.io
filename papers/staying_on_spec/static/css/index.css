@@ -749,42 +749,51 @@ a:focus {
   }
 }
 
+/* Table of Contents Panel */
 .contents-panel {
-  background-color: #f4f6f8;
-  border-radius: 16px;
-  padding: 28px 32px;
-  margin: 24px 0;
+  background: var(--background-accent);
+  border-radius: var(--border-radius-lg);
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
 }
 
 .contents-title {
-  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 16px;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
 }
 
 .contents-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .contents-pill {
   display: inline-block;
-  background-color: #ffffff;
-  color: #2563eb;
+  background: var(--background-primary);
+  color: var(--primary-color);
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 0.6rem 1.25rem;
   border-radius: 999px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-sm);
   text-decoration: none;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  transition: var(--transition);
 }
 
 .contents-pill:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-  transform: translateY(-1px);
-  color: #1d4ed8;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: var(--primary-hover);
+}
+
+/* Mobile: stack panel padding a bit tighter */
+@media screen and (max-width: 480px) {
+  .contents-panel {
+    padding: 1.25rem 1.25rem;
+  }
 }
 
 
