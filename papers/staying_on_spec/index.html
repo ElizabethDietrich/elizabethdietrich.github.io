@@ -92,7 +92,7 @@
       "https://github.com/YOUR_GITHUB_USERNAME"
     ]
   }
-  </script>
+  </script>-->
 </head>
 <body>
 
@@ -271,37 +271,6 @@ Robotic systems must operate under uncertainty while satisfying complex task and
 </div>
 </section>
 <!-- End paper abstract -->
-    
-<section class="section hero is-light">
-<div class="container is-max-desktop">
-<div class="columns is-centered has-text-centered">
-<div class="column is-four-fifths">
-<h2 class="title is-3">Method Overview</h2>
-<div class="content has-text-justified">
-<p>
-Offline: We use experimental data to characterize the disturbance distribution and incorporate it into the simulation model, bridging the sim-to-real gap (purple) and enabling inexpensive generation of real-world representative trajectories for reachability analysis. Online: The resulting reachable sets are combined with pacSTL specifications for real-time monitoring.
-</p>
-</div>
-</div>
-</div>
- 
-<!-- Wider container so the panoramic side-by-side diagram isn't squeezed into the narrower text column -->
-<div class="container" style="max-width: 95%; padding: 10px;">
-<img class="summary-img" src="static/images/staying_on_spec_overview_sidebyside.png" width="100%">
-</div>
- 
-</div>
-</section>
-<!--<section class="section" style="margin-top: 0; padding-top: 50px;">
-  <h2 class="title is-4" style="text-align: center;"></h2>
-  <div class="container is-max-desktop">
-    <div class="demo-block">
-      <div style="padding: 10px;">
-        <img class="summary-img" src="static/images/staying_on_spec_overview_sidebyside.png" width="100%">
-      </div>
-    </div>
-  </div>
-</section>
   
 
 
@@ -358,14 +327,51 @@ Offline: We use experimental data to characterize the disturbance distribution a
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lQIh8rX26ug?si=HtRUUg3SqwKucdjK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lQIh8rX26ug?si=RtfylY9NbCcwceU2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End youtube video -->
+
+<!-- Table of Contents Panel -->
+<div class="container is-max-desktop px-4">
+<div class="contents-panel">
+  <div class="contents-title">Contents</div>
+  <div class="contents-list">
+    <a href="#overview" class="contents-pill">Overview</a>
+    <a href="#qualitative-comparisons" class="contents-pill">Qualitative Comparisons</a>
+    <!--<a href="#bibtex" class="contents-pill">BibTeX</a>-->
+  </div>
+</div>
+</div>
+    
+
+<section class="section hero is-light">
+<div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Overview</h2>
+<div class="content has-text-justified">
+<p>
+Assessing temporal logic specification compliance under unbounded uncertainty is typically data-intensive. This is especially challenging for multi-agent relative states, as in maritime navigation.
+We build on pacSTL to enable specification monitoring under uncertainty for maritime navigation.
+Deploying pacSTL in the real world requires two key capabilities: (i) PAC-bounded reachable sets representative of real-world behavior, and (ii) a specification formulation that enables real-time evaluation. 
+We address these challenges by developing a sim-to-real calibration procedure that aligns simulated trajectories with the real-world distribution using limited experimental data, and by introducing efficiently evaluatable atomic propositions for maritime navigation.
+These contributions facilitate real-time monitoring of complex temporal logic specifications under uncertainty using offline-computed reachable sets, without requiring a symbolic model of the system.
+</p>
+</div>
+</div>
+</div>
+ 
+<!-- Wider container so the panoramic side-by-side diagram isn't squeezed into the narrower text column -->
+<div class="container" style="max-width: 95%; padding: 10px;">
+<img class="summary-img" src="static/images/staying_on_spec_overview_sidebyside.png" width="100%">
+</div>
+ 
+</div>
+</section>
 
 
 <section class="section" style="margin-top: 0; padding-top: 30px;">
