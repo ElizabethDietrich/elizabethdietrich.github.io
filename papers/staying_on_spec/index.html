@@ -74,11 +74,11 @@
     #overview, #qualitative-comparisons, #reachability {
       scroll-margin-top: 1.5rem;
     }
-    #overview .title.is-3::after,
-    #reachability .title.is-3::after,
-    #qualitative-comparisons .title.is-3::after {
-      left: 0;
-      transform: none;
+    .title.is-3 {
+      display: inline-block;
+    }
+    .title.is-3::after {
+      width: 100%;
     }
     @media screen and (min-width: 900px) {
       #overview .title.is-3 {
