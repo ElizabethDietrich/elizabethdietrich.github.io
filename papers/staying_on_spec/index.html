@@ -74,11 +74,15 @@
     #overview, #qualitative-comparisons, #reachability {
       scroll-margin-top: 1.5rem;
     }
-    #overview .title.is-3::after,
     #reachability .title.is-3::after,
     #qualitative-comparisons .title.is-3::after {
       left: 0;
       transform: none;
+    }
+    @media screen and (min-width: 900px) {
+      #reachability .title.is-3 {
+        font-size: 1.85rem;
+      }
     }
   </style>
   
