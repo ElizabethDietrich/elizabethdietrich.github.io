@@ -354,6 +354,11 @@ These contributions facilitate real-time monitoring of complex temporal logic sp
 We propose a data-driven reachability framework that combines data-driven disturbance modeling with sufficiently high-fidelity simulations. 
 Experimental data is used to characterize a disturbance distribution, which is incorporated into a nominal simulation model to generate trajectories for reachable set computation.
 A forward reachable set is defined as $$\mathcal{R}_t = \{\Xi(t;t_0, x_0, d) : x_0 \in \mathcal{X}_0, d \in \mathcal{D}\}$$ where $\mathcal{X}_0 \subseteq \mathbb{R}^{n_x}$ is the set of initial states, $\mathcal{D}$ is the set of disturbance signals $d: [t_0, t] \rightarrow \mathbb{R}^{n_d}$, and $\Xi(t;t_0, \cdot, \cdot) : \mathbb{R}^{n_x} \times \mathcal{D} \rightarrow \mathbb{R}^{n_x}$ is the state transition function.
+$\mathcal{R}_t $ contains all states that the system can transition to at time $t$ from $\mathcal{X}_0$ at $t_0$, subject to disturbances in $\mathcal{D}$.
+To estimate $\mathcal{R}_t$, we first specify the initial state set $\mathcal{X}_0$ and disturbance set $\mathcal{D}$, which may include disturbance terms, uncertain parameters, or other application-specific sources of variability. 
+The set $\mathcal{X}_0$ is selected given the operating conditions of interest, while $\mathcal{D}$ is characterized from real-world experimental data $\{\delta_r^{(i)}\}^L_{i=1}$.
+Given limited data and no prior distribution, the observed extrema of each disturbance component in $\{\delta_r^{(i)}\}^L_{i=1}$ can be used to parameterize a bounded support, $S_{\mathcal{D}}$, over which the disturbance distribution is modeled as uniform, i.e., $\mu_{\mathcal{D}} =\mathcal{U}(S_{\mathcal{D}})$.
+In the maritime setting, disturbances are largely captured by $b = \mathbf{M}\dot{\nu} - \tau + \mathbf{C}(\nu)\nu + \mathbf{D}(\nu)\nu$.
 </p>
 </div>
 </div>
