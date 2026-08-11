@@ -351,24 +351,25 @@ These contributions facilitate real-time monitoring of complex temporal logic sp
 <h2 class="title is-3">Data-Driven Reachability Analysis with Real-World Disturbances</h2>
 <div class="content has-text-justified">
 <p>
-We propose a data-driven reachability framework that combines data-driven disturbance modeling with sufficiently high-fidelity simulations. 
-Experimental data is used to characterize a disturbance distribution, which is incorporated into a nominal simulation model to generate trajectories for reachable set computation.
-A forward reachable set is defined as $$\mathcal{R}_t = \{\Xi(t;t_0, x_0, d) : x_0 \in \mathcal{X}_0, d \in \mathcal{D}\}$$ where $\mathcal{X}_0 \subseteq \mathbb{R}^{n_x}$ is the set of initial states, $\mathcal{D}$ is the set of disturbance signals $d: [t_0, t] \rightarrow \mathbb{R}^{n_d}$, and $\Xi(t;t_0, \cdot, \cdot) : \mathbb{R}^{n_x} \times \mathcal{D} \rightarrow \mathbb{R}^{n_x}$ is the state transition function.
-$\mathcal{R}_t $ contains all states that the system can transition to at time $t$ from $\mathcal{X}_0$ at $t_0$, subject to disturbances in $\mathcal{D}$.
-To estimate $\mathcal{R}_t$, we first specify the initial state set $\mathcal{X}_0$ and disturbance set $\mathcal{D}$, which may include disturbance terms, uncertain parameters, or other application-specific sources of variability. 
-The set $\mathcal{X}_0$ is selected given the operating conditions of interest, while $\mathcal{D}$ is characterized from real-world experimental data $\{\delta_r^{(i)}\}^L_{i=1}$.
-Given limited data and no prior distribution, the observed extrema of each disturbance component in $\{\delta_r^{(i)}\}^L_{i=1}$ can be used to parameterize a bounded support, $S_{\mathcal{D}}$, over which the disturbance distribution is modeled as uniform, i.e., $\mu_{\mathcal{D}} =\mathcal{U}(S_{\mathcal{D}})$.
+We develop a data-driven reachability framework that combines limited real-world experimental data with high-fidelity simulation to construct reachable sets that capture realistic system behavior.
+Rather than computing reachable sets directly from costly physical experiments, we use limited experimental data to characterize the distribution of real-world disturbances and incorporate this information into a nominal simulation model.
+This allows us to generate large quantities of trajectories in simulation that remain representative of real-world behavior.
 </p>
 <p>
-In the maritime setting, disturbances are largely captured by $b = \mathbf{M}\dot{\nu} - \tau + \mathbf{C}(\nu)\nu + \mathbf{D}(\nu)\nu$.
-We estimate the disturbance support $S_{\mathcal{D}}$ using data from approximately $100$ physical vessel trials conducted under representative operating conditions (e.g., still-water or wave conditions).
-In each trial, the vessel is initialized at a deployment starting position and commanded to traverse the laboratory pool using randomly sampled control inputs $\tau$. 
-After each traversal, the vessel is reset to its initial positions and the process is repeated. 
-Motion-capture measurements of vessel velocity $\nu$ and applied control inputs $\tau$ are used to compute the disturbance term $b$. 
-Finally, the $b$-component of $S_{\mathcal{D}}$ is defined by the component-wise extrema of $b$ observed across all trials. 
+A forward reachable set at time $t$ is 
+$$\mathcal{R}_t = \{\Xi(t;t_0, x_0, d) : x_0 \in \mathcal{X}_0, d \in \mathcal{D}\}$$ 
+where $\mathcal{X}_0$ specifies the operating conditions of interest, $\mathcal{D}$ captures disturbance terms, uncertain parameters, or other application-specific sources of variability, and $\Xi(t;t_0, \cdot, \cdot) : \mathbb{R}^{n_x} \times \mathcal{D} \rightarrow \mathbb{R}^{n_x}$ is the state transition function.
+We characterize $\mathcal{D}$ from real-world experimental data. 
+When only limited data is available and no prior distribution is known, we used the observed extrema of each disturbance component to define a bounded support $S_{\mathcal{D}}$ and model the disturbance distribution as uniform over this support.
+We then sample initial conditions and disturbances from their respective distributions and propagate them through the high-fidelity simulation model to generate trajectories for reachable set computation.
 </p>
 <p>
-For reachable set computation, uncertainty in the control input $\tau$ is introduced as an additional disturbance.
+In the maritime setting, disturbances are largely captured by 
+$$b = \mathbf{M}\dot{\nu} - \tau + \mathbf{C}(\nu)\nu + \mathbf{D}(\nu)\nu$$.
+We estimate the support $S_{\mathcal{D}}$ using data from approximately $100$ physical vessel trials conducted under representative operating conditions, including still-water or wave conditions.
+During each trial, the vessel traverses the test pool under randomly sampled control inputs, while motion-capture measurements of vessel velocity and applied inputs are used to infer the disturbance. 
+The component-wise extrema of $b$ observed across all trials define the $b$-component of $S_{\mathcal{D}}$ used in simulation.
+We additionally model uncertainty in the control input $\tau$ as an additional disturbance.
 Accordingly, the set of disturbance signals is
 $$
 \mathcal{D} =
@@ -377,15 +378,16 @@ $$
 \{b(t) = b, \ \forall t \in \{t_0, t_2, t_4, \ldots, t_T\}\} \;\cup \\[4pt]
 \{\tau(t) = \tau, \ \forall t \in \{t_0, t_1, t_2, \ldots, t_T\}\}
 \end{array}
-\right\},
+\right\}.
 $$
-where $\mu_{\mathcal{D}}$ is uniform over the identified support.
-In addition to $\mu_{\mathcal{D}}$, $\mu_{\mathcal{X}_0}$ is characterized to capture the vessel's operating conditions. 
-The vessel dynamics are invariant to global translations and equivariant under rotations, as they depend on relative orientation, velocity, inputs, and disturbances, rather than absolute position. 
+$\mu_{\mathcal{X}_0}$ is characterized to capture the vessel's operating conditions. 
+The vessel dynamics are invariant to global translations and equivariant under rotations. 
 We exploit this symmetry to reduce the number of reachable sets computed offline.
-The initial-state set for surge velocity is partitioned into four intervals, $\{\mathcal{U}_i\}_{i=1}^{4}$, spanning the experimental operating speeds.
-Reachable sets are computed separately for each interval, with $\mu_{\mathcal{X}_0}$ taken as a uniform distribution over the corresponding velocity range.
-Using $\mu_{\mathcal{X}_0}$ and $\mu_{\mathcal{D}}$, we simulate vessel trajectories and estimate the reachable sets.
+We partition the experimental range of surge velocities into four intervals and compute a reachable tube for each operating regime. 
+</p>
+<p>
+The resulting trajectories provide a data-driven representation of vessel behavior under experimentally observed disturbanes, while avoiding prohibitive costs of generating enough physical trials to construct reachable sets directly.
+These offline reachable sets are subsequently used for uncertainty-aware, real-time monitoring with pacSTL. 
 </p>
 </div>
 </div>
