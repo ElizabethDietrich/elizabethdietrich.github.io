@@ -369,17 +369,6 @@ $$b = \mathbf{M}\dot{\nu} - \tau + \mathbf{C}(\nu)\nu + \mathbf{D}(\nu)\nu$$.
 We estimate the support $S_{\mathcal{D}}$ using data from approximately $100$ physical vessel trials conducted under representative operating conditions, including still-water or wave conditions.
 During each trial, the vessel traverses the test pool under randomly sampled control inputs, while motion-capture measurements of vessel velocity and applied inputs are used to infer the disturbance. 
 The component-wise extrema of $b$ observed across all trials define the $b$-component of $S_{\mathcal{D}}$ used in simulation.
-We additionally model uncertainty in the control input $\tau$ as an additional disturbance.
-Accordingly, the set of disturbance signals is
-$$
-\mathcal{D} =
-\left\{
-\begin{array}{l}
-\{b(t) = b, \ \forall t \in \{t_0, t_2, t_4, \ldots, t_T\}\} \;\cup \\[4pt]
-\{\tau(t) = \tau, \ \forall t \in \{t_0, t_1, t_2, \ldots, t_T\}\}
-\end{array}
-\right\}.
-$$
 $\mu_{\mathcal{X}_0}$ is characterized to capture the vessel's operating conditions. 
 The vessel dynamics are invariant to global translations and equivariant under rotations. 
 We exploit this symmetry to reduce the number of reachable sets computed offline.
