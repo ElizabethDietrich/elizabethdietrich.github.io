@@ -94,6 +94,18 @@
       }
     }
   </style>
+
+  <!-- MathJax for rendering LaTeX math -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ 
   
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -341,6 +353,7 @@ These contributions facilitate real-time monitoring of complex temporal logic sp
 <p>
 We propose a data-driven reachability framework that combines data-driven disturbance modeling with sufficiently high-fidelity simulations. 
 Experimental data is used to characterize a disturbance distribution, which is incorporated into a nominal simulation model to generate trajectories for reachable set computation.
+A forward reachable set is defined as $$\mathcal{R}_t = \{\Xi(t;t_0, x_0, d) : x_0 \in \mathcal{X}_0, d \in \mathcal{D}\}$$ where $\mathcal{X}_0 \subseteq \mathbb{R}^{n_x}$ is the set of initial states, $\mathcal{D}$ is the set of disturbance signals $d: [t_0, t] \rightarrow \mathbb{R}^{n_d}$, and $\Xi(t;t_0, \cdot, \cdot) : \mathbb{R}^{n_x} \times \mathcal{D} \rightarrow \mathbb{R}^{n_x}$ is the state transition function.
 </p>
 </div>
 </div>
