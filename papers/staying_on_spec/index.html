@@ -403,21 +403,21 @@ The maritime use case illustrates a realistic setting for evaluating different r
 pacSTL specifications are constructed to determine whether an evasion maneuver is required. 
 First, we define predicates that determine whether the other vessel will occupy the relative position or orientation sector corresponding to each <code>encounter</code>. 
 The relative position and orientation specifications are defined using <code>position_halfplane</code> and <code>orientation_halfplane</code>:
-$$
-\begin{align}
-        &\mathtt{pos\_encounter} \eqqcolon  \\
-        &\mathtt{position\_halfplane}(\underline{\gamma^{p,e}}, \underline{\sigma}, \delta_t^E, \delta_t^O, v_\mathrm{max}) \land \notag \\
-        &\mathtt{position\_halfplane}(\overline{\gamma^{p,e}}, \overline{\sigma}, \delta_t^E, \delta_t^O, v_\mathrm{max}), \notag
-\end{align}
-$$
+\[
+\begin{aligned}
+\mathtt{pos\_encounter} &\coloneqq \\
+&\mathtt{position\_halfplane}(\underline{\gamma^{p,e}}, \underline{\sigma}, \delta_t^E, \delta_t^O, v_{\max}) \land \\
+&\mathtt{position\_halfplane}(\overline{\gamma^{p,e}}, \overline{\sigma}, \delta_t^E, \delta_t^O, v_{\max}),
+\end{aligned}
+\]
 
-$$
-\begin{align}
-        &\mathtt{ori\_encounter} \eqqcolon  \\
-        &\mathtt{orientation\_halfplane}(\underline{\gamma^{\psi,e}},  \underline{\sigma}, [\underline{\psi}_t^O , \overline{\psi}_t^O],\psi^E_t,  r_\mathrm{max}) \land \notag \\
-        &\mathtt{orientation\_halfplane}(\overline{\gamma^{\psi, e}}, \overline{\sigma}, [\underline{\psi}_t^O , \overline{\psi}_t^O],\psi^E_t,  r_\mathrm{max}). \notag
-\end{align}
-$$
+\[
+\begin{aligned}
+\mathtt{ori\_encounter} &\coloneqq \\
+&\mathtt{orientation\_halfplane}(\underline{\gamma^{\psi,e}}, \underline{\sigma}, [\underline{\psi}_t^O, \overline{\psi}_t^O], \psi_t^E, r_{\max}) \land \\
+&\mathtt{orientation\_halfplane}(\overline{\gamma^{\psi,e}}, \overline{\sigma}, [\underline{\psi}_t^O, \overline{\psi}_t^O], \psi_t^E, r_{\max}).
+\end{aligned}
+\]
 </p>
 <p>
 Then, we formalize each encounter specification as a conjunction of $\mathtt{pos\_encounter}$, $\mathtt{ori\_encounter}$, and $\mathtt{collision\_risk}$. 
