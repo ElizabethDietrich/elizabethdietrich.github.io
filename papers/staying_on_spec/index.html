@@ -390,7 +390,59 @@ These offline reachable sets are subsequently used for uncertainty-aware, real-t
 <h2 class="title is-3">Maritime Navigation</h2>
 <div class="content has-text-justified">
 <p>
+We demonstrate our framework in autonomous maritime navigation governed by the Convention on the International Regulations for Preventing Collisions at Sea (COLREG). 
+These rules specify how vessels should respond to different encounter situations, including crossing, head-on, and overtaking encounters, and distinguish between give-way and stand-on behavior.
 </p>
+<p>
+We focus on crossing and head-on encounters between an autonomous ego vessel and another traffic vessel.
+A head-on or crossing encounter is present when another vessel approaches the ego vessel from a specified sector and poses a risk of collision in the near future. 
+A head-on encounter corresponds to an approach within the front sector (i.e., $\pm \SI{10}{\degree}$ from the orientation of the ego vessel), whereas a crossing encounter corresponds to an approach from the right. 
+</p>
+<p>
+The maritime use case illustrates a realistic setting for evaluating different robustness measures as optimization objectives and demonstrates that efficient algorithms can be developed for nonlinear robustness measures.
+pacSTL specifications are constructed to determine whether an evasion maneuver is required. 
+First, we define predicates that determine whether the other vessel will occupy the relative position or orientation sector corresponding to each <code>encounter</code>. 
+The relative position and orientation specifications are defined using <code>position_halfplane</code> and <code>orientation_halfplane</code>:
+$$
+\begin{align}
+        &\mathtt{pos\_encounter} \eqqcolon  \\
+        &\mathtt{position\_halfplane}(\underline{\gamma^{p,e}}, \underline{\sigma}, \delta_t^E, \delta_t^O, v_\mathrm{max}) \land \notag \\
+        &\mathtt{position\_halfplane}(\overline{\gamma^{p,e}}, \overline{\sigma}, \delta_t^E, \delta_t^O, v_\mathrm{max}), \notag
+\end{align}
+$$
+
+$$
+\begin{align}
+        &\mathtt{ori\_encounter} \eqqcolon  \\
+        &\mathtt{orientation\_halfplane}(\underline{\gamma^{\psi,e}},  \underline{\sigma}, [\underline{\psi}_t^O , \overline{\psi}_t^O],\psi^E_t,  r_\mathrm{max}) \land \notag \\
+        &\mathtt{orientation\_halfplane}(\overline{\gamma^{\psi, e}}, \overline{\sigma}, [\underline{\psi}_t^O , \overline{\psi}_t^O],\psi^E_t,  r_\mathrm{max}). \notag
+\end{align}
+$$
+</p>
+<p>
+Then, we formalize each encounter specification as a conjunction of $\mathtt{pos\_encounter}$, $\mathtt{ori\_encounter}$, and $\mathtt{collision\_risk}$. 
+To trigger an evasive maneuver, we require these encounters to persist over a specified time interval $[t_\mathrm{start}, t_\mathrm{end}]$:
+Specifically, for a head-on encounter:
+$$
+\mathrm{G}_{[t_\mathrm{start}, t_\mathrm{end}]} (\mathtt{pos\_head\_on} \land \mathtt{ori\_head\_on} \land \mathtt{collision\_risk}) 
+$$
+and for a crossing encounter:
+$$
+\mathrm{G}_{[t_\mathrm{start}, t_\mathrm{end}]} (\mathtt{pos\_crossing} \land \mathtt{ori\_crossing} \land \mathtt{collision\_risk}),
+$$
+where $\mathrm{G}$ is the temporal operator for always. 
+</p>
+  
+<p>
+These specifications are evaluated using pacSTL, which accounts for uncertainty in the traffic vessel’s future behavior through data-driven reachable sets.
+During experimentation, the ego vessel uses a line-of-sight (LOS) controller to steer towards a specified goal at a desired velocity while continuously monitoring for potential encounters.  
+Once the upper bound on robustness $\mathrm{\overline{h}}$ becomes positive, indicating that an encounter is possible among the behaviors captured by the reachable set, the ego vessel initiates an evasive maneuver by modifying its desired path.
+</p>
+
+<p>
+This case study demonstrates the use of pacSTL when combining formalized traffic rules with data-driven predictions of uncertain system behabior to enable real-time, uncertainty-aware collision avoidance. 
+</p>
+
 </div>
 </div>
 </div>
