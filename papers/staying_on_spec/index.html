@@ -427,13 +427,16 @@ $$
 $$
 where $\mathrm{G}$ is the temporal operator for always. 
 </p>
-  
 <p>
 These specifications are evaluated using pacSTL, which accounts for uncertainty in the traffic vessel’s future behavior through data-driven reachable sets.
-During experimentation, the ego vessel uses a line-of-sight (LOS) controller to steer towards a specified goal at a desired velocity while continuously monitoring for potential encounters.  
+During experimentation, the ego vessel uses a line-of-sight (LOS) controller to steer towards a specified goal at a desired velocity while continuously monitoring for potential encounters (see below).  
 Once the upper bound on robustness $\mathrm{\overline{h}}$ becomes positive, indicating that an encounter is possible among the behaviors captured by the reachable set, the ego vessel initiates an evasive maneuver by modifying its desired path.
 </p>
-
+<!-- Wider container so the panoramic side-by-side diagram isn't squeezed into the narrower text column -->
+<div class="container" style="max-width: 95%; padding: 10px;">
+<img class="summary-img" src="static/images/maritime_nav_pic.png" width="100%">
+</div>
+  
 <p>
 This case study demonstrates the use of pacSTL when combining formalized traffic rules with data-driven predictions of uncertain system behabior to enable real-time, uncertainty-aware collision avoidance. 
 </p>
