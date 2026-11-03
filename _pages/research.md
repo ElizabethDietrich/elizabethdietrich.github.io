@@ -11,5 +11,5 @@ Certifying such systems in practice therefore requires data-driven methods that 
 To this end, I develop methods for (i) establishing finite-sample guarantees on system behavior and failure probabilities, and (ii) quantifying and mitigating risk in uncertain environments.</p>
 
 <div style="text-align:center; margin:20px 0;">
-  <img src="{{ '/assets/img/pac_figure.png' | relative_url }}" alt="PAC guarantee figure" style="max-width:75%; height:auto;">
+   <img src="../assets/img/pac_figure.png" style="max-width:75%; height:auto;">
 </div>
