@@ -3,7 +3,7 @@ layout: page
 permalink: /research/
 title: research
 description: 
-nav: true
+nav: false
 nav_order: 1
 ---
 <p>Catastrophic failures often arise from rare, low-probability events that extensive testing fails to expose. This challenge is amplified in safety-critical systems that rely on black-box components, such as deep neural networks or foundation models, which are high-dimensional, difficult to characterize, and cannot be certified with conventional, model-based verification methods. 
