@@ -344,44 +344,120 @@ These contributions facilitate real-time monitoring of complex temporal logic sp
 </div>
 </section>
 
+<!-- Drop-in replacement for the #reachability section.
+     Matches the Academic Project Page Template (Bulma, MathJax). Flat and restrained;
+     palette: pink / purple / yellow / teal. All styles scoped under #reachability. -->
+<style>
+  #reachability {
+    --pink:#e5558a; --purple:#7b4fc4; --yellow:#f2b705; --teal:#14a39a;
+    --ink:#363636; --muted:#6b7280; --line:#e5e7eb;
+  }
+  #reachability .rule { display:flex; height:4px; border-radius:2px; overflow:hidden; margin:.25rem 0 1.5rem; max-width:120px; }
+  #reachability .rule i { flex:1; }
+  #reachability .rule i:nth-child(1){background:var(--pink);} #reachability .rule i:nth-child(2){background:var(--purple);}
+  #reachability .rule i:nth-child(3){background:var(--yellow);} #reachability .rule i:nth-child(4){background:var(--teal);}
+
+  #reachability figure.fig { margin:2rem 0; }
+  #reachability figure.fig svg { width:100%; height:auto; display:block; }
+  #reachability figcaption { font-size:.9rem; color:var(--muted); margin-top:.6rem; text-align:center; }
+
+  #reachability .demo { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:2rem; align-items:center; margin:2rem 0; }
+  #reachability .demo svg { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  #reachability .key { display:flex; flex-wrap:wrap; gap:1rem; font-size:.88rem; color:var(--muted); margin:.5rem 0 1rem; }
+  #reachability .key i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:.4rem; }
+  #reachability .btn-resample { background:var(--purple); color:#fff; border:0; border-radius:6px; padding:.45rem 1rem; font-weight:600; cursor:pointer; }
+  #reachability .btn-resample:hover { filter:brightness(1.1); }
+
+  #reachability .guarantee { border-left:4px solid var(--purple); padding:.25rem 0 .25rem 1.25rem; margin:2rem 0; }
+  #reachability .guarantee .tag { font-weight:700; color:var(--purple); }
+
+  #reachability .stats { display:flex; gap:3rem; justify-content:center; margin:1.75rem 0; flex-wrap:wrap; }
+  #reachability .stat { text-align:center; }
+  #reachability .stat .big { font-size:2.6rem; font-weight:800; line-height:1; }
+  #reachability .stat .lbl { font-size:.88rem; color:var(--muted); margin-top:.35rem; max-width:11rem; }
+
+  #reachability dl.facts { margin:1.25rem 0; }
+  #reachability dl.facts div { display:grid; grid-template-columns:9rem 1fr; gap:1rem; padding:.7rem 0; border-top:1px solid var(--line); }
+  #reachability dl.facts div:last-child { border-bottom:1px solid var(--line); }
+  #reachability dl.facts dt { font-weight:700; }
+  #reachability dl.facts dd { margin:0; }
+
+  @media (max-width:760px){
+    #reachability .demo { grid-template-columns:1fr; }
+    #reachability dl.facts div { grid-template-columns:1fr; gap:.15rem; }
+  }
+</style>
+
 <section class="section" id="reachability">
 <div class="container is-max-desktop">
 <div class="columns is-centered">
 <div class="column is-full">
+
 <h2 class="title is-3">Data-Driven Reachability Analysis with Real-World Disturbances</h2>
+<div class="rule"><i></i><i></i><i></i><i></i></div>
+
 <div class="content has-text-justified">
-<p>
-We develop a data-driven reachability framework that combines limited real-world experimental data with high-fidelity simulation to construct reachable sets that capture realistic system behavior.
-Rather than computing reachable sets directly from costly physical experiments, we use limited experimental data to characterize the distribution of real-world disturbances and incorporate this information into a nominal simulation model.
-This allows us to generate large quantities of trajectories in simulation that remain representative of real-world behavior.
-</p>
-<p>
-A forward reachable set at time $t$ is 
-$$\mathcal{R}_t = \{\Xi(t;t_0, x_0, d) : x_0 \in \mathcal{X}_0, d \in \mathcal{D}\}$$ 
-where $\mathcal{X}_0$ specifies the operating conditions of interest, $\mathcal{D}$ captures disturbance terms, uncertain parameters, or other application-specific sources of variability, and $\Xi(t;t_0, \cdot, \cdot) : \mathbb{R}^{n_x} \times \mathcal{D} \rightarrow \mathbb{R}^{n_x}$ is the state transition function.
-We characterize $\mathcal{D}$ from real-world experimental data. 
-When only limited data is available and no prior distribution is known, we used the observed extrema of each disturbance component to define a bounded support $S_{\mathcal{D}}$ and model the disturbance distribution as uniform over this support.
-We then sample initial conditions and disturbances from their respective distributions and propagate them through the high-fidelity simulation model to generate trajectories for reachable set computation.
-</p>
-<p>
-In the maritime setting, disturbances are largely captured by 
-$$b = \mathbf{M}\dot{\nu} - \tau + \mathbf{C}(\nu)\nu + \mathbf{D}(\nu)\nu.$$
-We estimate the support $S_{\mathcal{D}}$ using data from approximately $100$ physical vessel trials conducted under representative operating conditions, including still-water or wave conditions.
-During each trial, the vessel traverses the test pool under randomly sampled control inputs, while motion-capture measurements of vessel velocity and applied inputs are used to infer the disturbance. 
-The component-wise extrema of $b$ observed across all trials define the $b$-component of $S_{\mathcal{D}}$ used in simulation.
-Additionally, $\mu_{\mathcal{X}_0}$ is characterized to capture the vessel's operating conditions. 
-The vessel dynamics are invariant to global translations and equivariant under rotations, which we exploit to reduce the number of reachable sets computed offline.
-We partition the experimental range of surge velocities into four intervals and compute a reachable tube for each operating regime. 
-</p>
-<p>
-The resulting trajectories provide a data-driven representation of vessel behavior under experimentally observed disturbanes, while avoiding prohibitive costs of generating enough physical trials to construct reachable sets directly.
-These offline reachable sets are subsequently used for uncertainty-aware, real-time monitoring with pacSTL. 
-</p>
+  <p>
+    Computing reachable sets from real data alone is hard: collecting enough i.i.d. samples for meaningful statistical guarantees is time- and resource-intensive,
+    the i.i.d. assumption may not hold across changing environmental and platform conditions, and the underlying distributions are rarely known.
+    Simulators provide abundant data, but suffer from a sim-to-real gap.
+    We combine the two. Limited experimental data characterizes a <strong style="color:var(--pink)">disturbance distribution</strong>,
+    which we plug into a nominal <strong style="color:var(--teal)">simulation model</strong> to generate the trajectories used to compute reachable sets.
+  </p>
 </div>
+
+<!-- Pipeline figure -->
+<figure class="fig">
+  <svg viewBox="0 0 900 150" role="img" aria-label="Pipeline: real experiments, disturbance support, simulation, reachable set">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0L10 5L0 10z" fill="#9ca3af"/>
+      </marker>
+    </defs>
+    <g font-family="inherit">
+      <!-- 1 -->
+      <rect x="4" y="10" width="196" height="120" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>
+      <rect x="4" y="10" width="196" height="7" rx="3" fill="#e5558a"/>
+      <text x="20" y="46" font-size="12" font-weight="700" fill="#e5558a">1  EXPERIMENTS</text>
+      <text x="20" y="72" font-size="15" font-weight="700" fill="#363636">Disturbances</text>
+      <text x="20" y="94" font-size="12.5" fill="#6b7280">L trials give K</text>
+      <text x="20" y="111" font-size="12.5" fill="#6b7280">disturbance realizations</text>
+      <!-- 2 -->
+      <rect x="248" y="10" width="196" height="120" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>
+      <rect x="248" y="10" width="196" height="7" rx="3" fill="#7b4fc4"/>
+      <text x="264" y="46" font-size="12" font-weight="700" fill="#7b4fc4">2  SUPPORT</text>
+      <text x="264" y="72" font-size="15" font-weight="700" fill="#363636">Bounded box S<tspan font-size="10" dy="4">D</tspan></text>
+      <text x="264" y="94" font-size="12.5" fill="#6b7280">empirical extrema,</text>
+      <text x="264" y="111" font-size="12.5" fill="#6b7280">uniform over the box</text>
+      <!-- 3 -->
+      <rect x="492" y="10" width="196" height="120" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>
+      <rect x="492" y="10" width="196" height="7" rx="3" fill="#14a39a"/>
+      <text x="508" y="46" font-size="12" font-weight="700" fill="#14a39a">3  SIMULATION</text>
+      <text x="508" y="72" font-size="15" font-weight="700" fill="#363636">N trajectories</text>
+      <text x="508" y="94" font-size="12.5" fill="#6b7280">sample (x&#8320;, d) i.i.d.,</text>
+      <text x="508" y="111" font-size="12.5" fill="#6b7280">simulate with &#926;</text>
+      <!-- 4 -->
+      <rect x="736" y="10" width="160" height="120" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>
+      <rect x="736" y="10" width="160" height="7" rx="3" fill="#f2b705"/>
+      <text x="752" y="46" font-size="12" font-weight="700" fill="#b88a00">4  REACHABLE SET</text>
+      <text x="752" y="72" font-size="15" font-weight="700" fill="#363636">R<tspan font-size="10" dy="4">t</tspan><tspan dy="-4"> with PAC bound</tspan></text>
+      <text x="752" y="94" font-size="12.5" fill="#6b7280">min. volume,</text>
+      <text x="752" y="111" font-size="12.5" fill="#6b7280">confidence 1 &#8722; &#946;</text>
+      <!-- arrows -->
+      <line x1="204" y1="70" x2="242" y2="70" stroke="#9ca3af" stroke-width="2" marker-end="url(#arr)"/>
+      <line x1="448" y1="70" x2="486" y2="70" stroke="#9ca3af" stroke-width="2" marker-end="url(#arr)"/>
+      <line x1="692" y1="70" x2="730" y2="70" stroke="#9ca3af" stroke-width="2" marker-end="url(#arr)"/>
+    </g>
+  </svg>
+</figure>
+
+
+
 </div>
 </div>
 </div>
 </section>
+
 
 <section class="section" id="maritime">
 <div class="container is-max-desktop">
