@@ -394,15 +394,15 @@ These contributions facilitate real-time monitoring of complex temporal logic sp
 <div class="column is-full">
 
 <h2 class="title is-3">Data-Driven Reachability Analysis with Real-World Disturbances</h2>
-<div class="rule"><i></i><i></i><i></i><i></i></div>
 
 <div class="content has-text-justified">
   <p>
-    Computing reachable sets from real data alone is hard: collecting enough i.i.d. samples for meaningful statistical guarantees is time- and resource-intensive,
-    the i.i.d. assumption may not hold across changing environmental and platform conditions, and the underlying distributions are rarely known.
-    Simulators provide abundant data, but suffer from a sim-to-real gap.
-    We combine the two. Limited experimental data characterizes a <strong style="color:var(--pink)">disturbance distribution</strong>,
-    which we plug into a nominal <strong style="color:var(--teal)">simulation model</strong> to generate the trajectories used to compute reachable sets.
+    <strong style="color:var(--pink)">We propose a data-driven reachability framework that combines data-driven disturbance modeling with sufficiently high-fidelity simulations.</strong>
+    Although data-driven methods can, in principle, be applied directly to real-world data, doing so presents significant practical challenges.
+    Collecting sufficient i.i.d. samples to obtain meaningful statistical guarantees is time- and resource-intensive and ensuring the i.i.d. assumption holds across varying environmental and platform conditions may be infeasible.
+    Additionally, the probability distributions required by data-driven reachability techniques are rarely known for complex systems.
+    Conversely, while simulations provide abundant data, they typically suffer from a sim-to-real gap.
+    To address these challenges, we use <strong style="color:var(--teal)">limited experimental data to characterize a disturbance distribution and incorporate it into a nominal simulation model to generate trajectories for reachable set computation</strong>.
   </p>
 </div>
 
